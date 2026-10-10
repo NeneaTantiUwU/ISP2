@@ -1,3 +1,5 @@
+package LAB1;
+
 public class Cuvant {
     String cuvant;
 
