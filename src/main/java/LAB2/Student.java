@@ -1,9 +1,9 @@
 package LAB2;
 
 public class Student {
-    private String nume;
-    private String prenume;
-    private int grupa;
+    public String nume;
+    public String prenume;
+    public int grupa;
     private int []note;
 
     public Student(String nume, String prenume, int grupa, int[] note) {

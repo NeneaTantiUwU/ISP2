@@ -57,5 +57,10 @@ void main() {
 
     Collections.sort(xPlusYLimitedByP);
 
+    students.sort(
+            Comparator.comparing((Student s) -> s.grupa)
+                    .thenComparing(s -> s.nume)
+                    .thenComparing(s -> s.prenume)
+    );
 
 }
