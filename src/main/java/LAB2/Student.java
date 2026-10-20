@@ -12,4 +12,14 @@ public class Student {
         this.grupa = grupa;
         this.note = note;
     }
+
+    public int average() {
+        int suma = 0;
+        int count = 0;
+        for(int i = 0; i < note.length; i++) {
+            suma += note[i];
+            count ++;
+        }
+        return suma / count;
+    }
 }

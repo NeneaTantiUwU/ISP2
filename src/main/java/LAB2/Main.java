@@ -1,3 +1,4 @@
+import LAB2.ByGradesComparator;
 import LAB2.Student;
 
 import java.util.Random;
@@ -14,6 +15,9 @@ void main() {
     int p = 4;
     List<Integer> xPlusYLimitedByP = new ArrayList(); //d
     List<Student>  students = new ArrayList();
+
+    Student o1;
+    Student o2;
 
     students.add(new Student("Popescu", "Ion", 221, new int[]{8, 9, 7, 10, 6}));
     students.add(new Student("Ionescu", "Ana",222, new int[]{10, 9, 9, 8, 10}));
@@ -62,5 +66,7 @@ void main() {
                     .thenComparing(s -> s.nume)
                     .thenComparing(s -> s.prenume)
     );
+
+    Collections.sort(students, new ByGradesComparator());
 
 }
