@@ -22,4 +22,9 @@ public class Student {
         }
         return suma / count;
     }
+
+    public boolean ifRestantier() {
+        Student o1 = new Student(nume, prenume, grupa, note);
+        return o1.average() < 5;
+    }
 }
