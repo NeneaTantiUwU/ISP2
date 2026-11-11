@@ -17,7 +17,7 @@ public class Main {
         int maxim = 0;
         int minim = Integer.MAX_VALUE;
 
-        for (int i = 0; i <= listaNumere.size(); i++) {
+        for (int i = 0; i < 50; i++) {
             int numar = rand.nextInt(21) + 5;
             listaNumere.add(numar);
             if (numar > maxim) {
@@ -40,6 +40,7 @@ public class Main {
                 System.out.println(listaNumere.get(i));
             }
         }
+
         for (int i = 0; i < listaNoua.size(); i++) {
             if (listaNoua.get(i) > maxim) {
                 maxim = listaNoua.get(i);
